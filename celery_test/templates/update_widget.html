@@ -1,0 +1,16 @@
+<!-- update_widget.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Widget</title>
+</head>
+<body>
+    <h1>Update Widget</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+    <a href="{% url 'widget_list' %}">Back to Widget List</a>
+</body>
+</html>

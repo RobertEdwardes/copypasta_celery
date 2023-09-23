@@ -1,0 +1,4 @@
+django>=2.2.1
+sqlalchemy>=1.2.18
+celery>=5.0.5
+gunicorn

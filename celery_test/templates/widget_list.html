@@ -1,0 +1,16 @@
+<!-- widget_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Widget List</title>
+</head>
+<body>
+    <h1>Widget List</h1>
+    <ul>
+        {% for widget in widgets %}
+            <li>{{ widget.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_widget' %}">Create Widget</a>
+</body>
+</html>

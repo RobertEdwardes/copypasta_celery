@@ -1,0 +1,16 @@
+<!-- create_widget.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Widget</title>
+</head>
+<body>
+    <h1>Create Widget</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'widget_list' %}">Back to Widget List</a>
+</body>
+</html>
